@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: deepskyblue;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="za.ac.tut.bookseditor.BooksEditorController">
+   <top>
+      <AnchorPane prefHeight="125.0" prefWidth="520.0" style="-fx-background-color: deepskyblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="246.0" layoutY="30.0" text="JJ LIBRARY BOOKS ADMISTRATOR" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="246.0" layoutY="81.0" text="PLEASE INSERT BOOK DETAILS" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font name="Algerian" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <VBox prefHeight="375.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAddBook" contentDisplay="TOP" mnemonicParsing="false" onAction="#addBooks" prefHeight="100.0" prefWidth="150.0" text="Add Books">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/books_blue_add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearch" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#searchBook" prefHeight="100.0" prefWidth="150.0" text="Search Book">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/search-marketing.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearchStudent" contentDisplay="TOP" mnemonicParsing="false" onAction="#searchStudent" prefHeight="100.0" prefWidth="150.0" text="Search Student">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/search%20student.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <TabPane maxHeight="4375.0" minHeight="375.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="View All Students">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: skyblue;">
+                     <children>
+                        <TextArea fx:id="txtAreaViewStudent" editable="false" layoutX="165.0" layoutY="25.0" prefHeight="333.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0" />
+                        <Button fx:id="btnTAP" contentDisplay="CENTER" layoutY="1.0" mnemonicParsing="false" onAction="#viewAllStudent" style="-fx-background-color: skyblue;" text="Tap Here To See All Members" underline="true" AnchorPane.bottomAnchor="315.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="View All Books">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: skyblue;">
+                     <children>
+                        <TextArea fx:id="txtAreaAvailableBooks" editable="false" layoutX="148.0" layoutY="42.0" prefHeight="332.0" prefWidth="450.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                        <Button fx:id="btnViewBooks" contentDisplay="CENTER" layoutX="224.0" layoutY="14.0" mnemonicParsing="false" onAction="#viewAllBooks" style="-fx-background-color: skyblue;" text="Tap Here To See All Books" underline="true" AnchorPane.bottomAnchor="315.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Issiued Books">
+              <content>
+                <AnchorPane maxHeight="380.0" minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="450.0" style="-fx-background-color: skyblue;">
+                     <children>
+                        <TextArea fx:id="txtAreaIssuedBooks" editable="false" layoutX="125.0" layoutY="31.0" maxHeight="320.0" minHeight="315.0" prefHeight="315.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0" />
+                        <Button fx:id="btnIssuedBooks" contentDisplay="CENTER" layoutX="199.0" layoutY="14.0" mnemonicParsing="false" onAction="#issuedBooks" style="-fx-background-color: skyblue;" text="Tap Here To See All Issued Books" underline="true" AnchorPane.bottomAnchor="315.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="196.0" layoutY="69.0" text="Copyright (C) All Rights Reserved" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDone" layoutX="274.0" layoutY="25.0" mnemonicParsing="false" onAction="#doneMethod" text="DONE" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

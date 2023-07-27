@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="za.ac.tut.login.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="136.0" text="LIBRARY" textFill="#e8e8e8" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="185.0" text="JJ LIBRARY" textFill="#f8f8f8" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="185.0">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="114.0" layoutY="181.0" startX="-100.0" stroke="#e2e7e8f7" strokeWidth="4.0" AnchorPane.bottomAnchor="225.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="170.0" />
+            <Circle fill="#1f93ff00" layoutX="107.0" layoutY="170.0" radius="100.0" stroke="#eeeeee" strokeType="INSIDE" strokeWidth="4.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="21.0" />
+            <Label alignment="CENTER" layoutX="100.0" layoutY="325.0" text="Copyright (c) All Rights Reserved" textFill="#eeeeee" underline="true" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="68.0" text="Secured Login" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="130.0" prefHeight="30.0" prefWidth="102.0" text="Usename" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="192.0" prefHeight="30.0" text="Password" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="210.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPassword" layoutX="115.0" layoutY="190.0" prefHeight="30.0" prefWidth="180.0" promptText="Password" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="210.0">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="txtUserName" layoutX="96.0" layoutY="130.0" prefHeight="30.0" prefWidth="180.0" promptText="Username" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </TextField>
+            <Button fx:id="btnLogin" layoutX="34.0" layoutY="253.0" mnemonicParsing="false" onAction="#loginButtonPressed" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: purple;" text="Login" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="280.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.44285714285714284" endY="1.0" startX="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.007553606294095516" green="0.8023188710212708" blue="0.8157894611358643" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="btnRegister" layoutX="169.0" layoutY="253.0" mnemonicParsing="false" onAction="#registerButtonPressed" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: purple;" text="Register" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="280.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.44285714285714284" endY="1.0" startX="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.007553606294095516" green="0.8023188710212708" blue="0.8157894611358643" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="112.0" layoutY="298.0" mnemonicParsing="false" onAction="#cancelButtonPressed" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: purple;" text="Cancel" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="330.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.44285714285714284" endY="1.0" startX="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.007553606294095516" green="0.8023188710212708" blue="0.8157894611358643" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Label alignment="CENTER" layoutX="118.0" layoutY="232.0" text="Don't have account? Register" textFill="#9e0c0c" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0" />
+            <Label alignment="CENTER" layoutX="128.0" layoutY="68.0" text="WHO ARE YOU?" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+               <font>
+                  <Font name="Bodoni MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radioStudent" layoutX="50.0" layoutY="100.0" mnemonicParsing="false" text="Student" AnchorPane.leftAnchor="50.0">
+               <toggleGroup>
+                  <ToggleGroup fx:id="whoAreYou" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radioAdmin" layoutX="204.0" layoutY="100.0" mnemonicParsing="false" text="Admin" toggleGroup="$whoAreYou" AnchorPane.rightAnchor="50.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

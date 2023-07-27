@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="za.ac.tut.registor.RegistrationFormController">
+   <top>
+      <AnchorPane prefHeight="115.0" prefWidth="520.0" style="-fx-background-color: cyan;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="246.0" layoutY="32.0" text="JJ LIBRARY REGISTRATION" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Algerian" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="232.0" layoutY="84.0" text="Please Fill In The Form" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="578.0" prefHeight="637.0" prefWidth="520.0" style="-fx-background-color: violet;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtSudNo" layoutX="300.0" layoutY="30.0" promptText="Student Number" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+            <TextField fx:id="txtIDNo" layoutX="300.0" layoutY="30.0" promptText="identity number" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="180.0" />
+            <TextField fx:id="txtCellNumber" layoutX="300.0" layoutY="30.0" promptText="0712345689" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="230.0" />
+            <TextField fx:id="txtEmailAdress" layoutX="300.0" layoutY="30.0" promptText="Email address" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="280.0" />
+            <TextField fx:id="txtCourseName" layoutX="300.0" layoutY="30.0" promptText="course name" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="330.0" />
+            <Label layoutX="60.0" layoutY="30.0" text="Student number" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="182.0" text="ID Number" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="180.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="282.0" text="Cell Phone" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="230.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="332.0" text="Email Adress" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="280.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="30.0" text="Password" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="380.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="399.0" text="Course" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="330.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="30.0" text="Names" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="80.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNames" layoutX="300.0" layoutY="30.0" promptText="full names" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0" />
+            <TextField fx:id="txtSurname" layoutX="300.0" layoutY="30.0" promptText="last name" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="130.0" />
+            <Label layoutX="64.0" layoutY="124.0" text="Surname" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="473.0" text="Confirm Password" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="430.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSubmit" alignment="CENTER" layoutX="230.0" layoutY="535.0" mnemonicParsing="false" onAction="#pressedSubmitButton" text="Submit" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="480.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5523809523809524" endY="1.0" startX="0.48095238095238096" startY="0.6285714285714286">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.29492366313934326" green="0.07772904634475708" blue="0.5789473652839661" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="btnCancel" alignment="CENTER" layoutX="90.0" layoutY="530.0" mnemonicParsing="false" onAction="#cancelButtonPressed" text="Cancel" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="480.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5523809523809524" endY="0.12380952380952381" startX="0.48095238095238096" startY="0.40476190476190477">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.29492366313934326" green="0.07772904634475708" blue="0.5789473652839661" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <PasswordField fx:id="txtPassword" layoutX="290.0" layoutY="429.0" promptText="password" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="380.0" />
+            <PasswordField fx:id="txtConfirmPassword" layoutX="290.0" layoutY="479.0" promptText="confirm password" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="430.0" />
+            <Label alignment="CENTER" layoutX="60.0" layoutY="578.0" prefHeight="20.0" prefWidth="400.0" text="Copyright(C) All Right Reserved" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="578.0">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRestart" alignment="CENTER" layoutX="208.0" layoutY="530.0" mnemonicParsing="false" onAction="#restartButtonPressed" prefHeight="34.0" prefWidth="102.0" text="Restart" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="480.0">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5523809523809524" endY="1.0" startX="0.48095238095238096" startY="0.6285714285714286">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.29492366313934326" green="0.07772904634475708" blue="0.5789473652839661" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

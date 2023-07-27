@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="za.ac.tut.learnerservice.LearnerServiceController">
+   <top>
+      <AnchorPane prefHeight="125.0" prefWidth="600.0" style="-fx-background-color: deepskyblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="270.0" layoutY="39.0" text="JJ LIRARY BOOKS ORDERING" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="279.0" layoutY="80.0" text="PLEASE ORDER BOOKS HERE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font name="Algerian" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <TabPane prefHeight="475.0" prefWidth="688.0" style="-fx-background-color: skyblue;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="View All books">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="CENTER" layoutX="199.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: skyblue;" text="Tap Here To See All Books" underline="true" wrapText="true" AnchorPane.bottomAnchor="320.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <TextArea fx:id="txtAreaAllBooks" editable="false" layoutX="1.0" layoutY="32.0" prefHeight="323.0" prefWidth="455.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                        <Button fx:id="btnViewAllBooks" alignment="CENTER" layoutX="185.0" layoutY="2.0" mnemonicParsing="false" onAction="#diplayAllBooks" style="-fx-background-color: skyblue;" text="Tap Here To View All Books" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="View Borrowed Books">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="CENTER" layoutX="205.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: skyblue;" text="Tap Here To See And Return Book You Ordered" underline="true" AnchorPane.bottomAnchor="320.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <TextArea fx:id="txtAreaOrderedBook" editable="false" layoutX="6.0" layoutY="25.0" prefHeight="221.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                        <Button fx:id="btnOrderedBooks" alignment="CENTER" layoutX="205.0" layoutY="2.0" mnemonicParsing="false" onAction="#issuedBooks" style="-fx-background-color: skyblue;" text="Tap Here To See Your Ordered Books" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Order Book">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtISBN" layoutX="11.0" layoutY="10.0" prefHeight="30.0" prefWidth="580.0" promptText="Enter ISBN" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                        <Button fx:id="btnOKSearch" layoutX="234.0" layoutY="44.0" mnemonicParsing="false" onAction="#searchBook" text="OK" AnchorPane.bottomAnchor="177.0" AnchorPane.topAnchor="40.0" />
+                        <TextArea fx:id="txtAreaSearchedBook" editable="false" layoutY="76.0" prefHeight="174.0" prefWidth="200.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
+                        <Button fx:id="txtSubmitOrder" layoutX="225.0" layoutY="224.0" mnemonicParsing="false" onAction="#submitOrder" text="Submit" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Return / Renew">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="110.0" layoutY="25.0" prefHeight="250.0" prefWidth="256.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="244.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="252.0" fitWidth="313.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="187.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../pictures/reading-book-icon.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="254.0" fitWidth="249.0" layoutX="251.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../pictures/renew%20book%20icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="txtISBN1" prefHeight="30.0" prefWidth="580.0" promptText="Enter ISBN" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnReturn" mnemonicParsing="false" onAction="#returnBook" prefHeight="25.0" prefWidth="70.0" text="Return" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="260.0">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="0.6398104265402844" startX="0.5924170616113744" startY="0.33175355450236965">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.2651072144508362" green="0.1739766150712967" blue="0.6710526347160339" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.10526315867900848" green="0.002923976629972458" blue="0.002923976629972458" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button fx:id="btnRenew" layoutX="286.0" layoutY="186.0" maxHeight="25.0" maxWidth="70.0" minHeight="25.0" minWidth="70.0" mnemonicParsing="false" onAction="#renewBook" prefHeight="25.0" prefWidth="70.0" text="Renew" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="170.0">
+                           <textFill>
+                              <LinearGradient endX="0.7109004739336493" endY="0.6398104265402844" startX="0.5924170616113744" startY="0.33175355450236965">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.2651072144508362" green="0.1739766150712967" blue="0.6710526347160339" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="96.0" prefWidth="500.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="286.0" layoutY="160.0" text="Copyright (C) All Rights Reserved" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDONE" layoutX="274.0" layoutY="14.0" mnemonicParsing="false" onAction="#done" text="DONE" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0">
+               <textFill>
+                  <LinearGradient endX="0.7109004739336493" endY="0.6398104265402844" startX="0.5924170616113744" startY="0.33175355450236965">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.2651072144508362" green="0.1739766150712967" blue="0.6710526347160339" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
